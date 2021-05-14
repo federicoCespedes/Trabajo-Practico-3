@@ -5,7 +5,7 @@ module.exports = {
     leerJson: () => JSON.parse(fs.readFileSync('./db/tareas.json', 'utf-8')),
 
 
-    listarTareas: function () {         // Agregar tareas, borrar tareas ,filtrar tareas, Total de tareas
+    listarTareas: function () {         
 
         let tareas = this.leerJson();
 
