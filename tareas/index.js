@@ -5,15 +5,11 @@ module.exports = {
     leerJson: () => JSON.parse(fs.readFileSync('./db/tareas.json', 'utf-8')),
 
 
-    listarTareas: function () {         
-
-        let tareas = this.leerJson();
-
-
-        for (let i = 0; i < tareas.length; i++) {
-
-            console.log(tareas[i]);
-        };
+    listarTareas: function () {                      //Implementación de forEach en reemplazo de for//
+        tareas.forEach(tarea => {
+            console.log(tarea);
+    });
+        
     },
     agregarTareas: function (titulo, estado) {
 
@@ -36,7 +32,7 @@ module.exports = {
         this.listarTareas()
     },
     guardarJson: function (tareas) {
-        fs.writeFileSync('./db/tareas.json', JSON.stringify(tareas), 'utf-8')
+        fs.writeFileSync('./db/tareas.json', JSON.stringify(tareas,null,2), 'utf-8')  //Implementación de null,2 para no perder el indentado.
     }
 
     }

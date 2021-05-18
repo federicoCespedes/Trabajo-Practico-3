@@ -1,1 +1,10 @@
-[{"titulo":"biología","estado":"terminada"},{"titulo":"matematica","estado":"pendiente"}]
+[
+  {
+    "titulo": "biología",
+    "estado": "terminada"
+  },
+  {
+    "titulo": "matematica",
+    "estado": "pendiente"
+  }
+]

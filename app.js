@@ -16,8 +16,8 @@ switch (comando) {
 
    case 'filtrar':
 
-      moduloTareas.filtrarTareas();
-
+      moduloTareas.filtrarTareas(process.argv[3])
+     
       break;
 
    case 'agregar':
